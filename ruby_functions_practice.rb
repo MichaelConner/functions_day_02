@@ -39,3 +39,7 @@ end
 def number_to_short_month_name(month_number)
   return Date::ABBR_MONTHNAMES[month_number]
 end
+
+def volume_of_cube(length)
+  return length**3
+end
