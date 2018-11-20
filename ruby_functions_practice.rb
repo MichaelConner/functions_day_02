@@ -1,5 +1,6 @@
 require 'date'
 
+
 def return_10
   return 10
 end
@@ -42,4 +43,8 @@ end
 
 def volume_of_cube(length)
   return length**3
+end
+
+def volume_of_sphere(radius)
+  return  Math::PI * radius**3 * 4 / 3
 end
