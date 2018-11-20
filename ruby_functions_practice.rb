@@ -1,3 +1,5 @@
+require 'date'
+
 def return_10
   return 10
 end
@@ -28,4 +30,12 @@ end
 
 def add_string_as_number(string_num1, string_num2)
   return string_num1.to_f + string_num2.to_f
+end
+
+ def number_to_full_month_name(month_number)
+   return Date::MONTHNAMES[month_number]
+ end
+
+def number_to_short_month_name(month_number)
+  return Date::ABBR_MONTHNAMES[month_number]
 end
