@@ -90,11 +90,12 @@ class FunctionsTest < MiniTest::Test
     volume_of_sphere_result = volume_of_sphere(10)
     assert_equal(10**3 * Math::PI * 4 / 3, volume_of_sphere_result)
   end
-#
-#   #Given a value in farenheit, convert this into celsius.
-#   def test_fahrenheit_to_celsius()
-#     #add test code here
-#   end
-#
-#
+
+  #Given a value in farenheit, convert this into celsius.
+  def test_fahrenheit_to_celsius()
+    fahrenheit_to_celsius_result = fahrenheit_to_celsius(100)
+    assert_equal((100-32)*5/9, fahrenheit_to_celsius_result)
+  end
+
+
  end
